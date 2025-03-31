@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cotización</title>
+    <link rel="stylesheet" href="styles.css">
+    <button onclick="window.location.href='index.html'">Volver al Menú</button>
+
+    <!-- Agregar las librerías de jsPDF y autoTable -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf-autotable/3.5.14/jspdf.plugin.autotable.min.js"></script>
+</head>
+<body>
+    <h1>Cotización</h1>
+    
+    <form id="cotizacionForm">
+        <label for="nombre">Nombre del Cliente:</label>
+        <input type="text" id="nombre" required><br>
+
+        <label for="producto">Nombre del Producto:</label>
+        <input type="text" id="producto" required><br>
+
+        <label for="precioUsd">Precio en USD:</label>
+        <input type="number" id="precioUsd" required><br>
+
+        <label for="tipoEnvio">Tipo de Envío:</label>
+        <select id="tipoEnvio">
+            <option value="zapato">Zapato</option>
+            <option value="ropaNiños">Ropa de Niños</option>
+            <option value="articuloPequeño">Artículo Pequeño</option>
+            <option value="ropaAdulto">Ropa de Adulto</option>
+            <option value="articuloGrande">Artículo Grande</option>
+        </select><br>
+
+        <label for="descuento">Descuento (%):</label>
+        <input type="number" id="descuento"><br>
+
+        <button type="submit">Generar Cotización</button>
+    </form>
+
+    <h2>Resumen de Cotización</h2>
+    <div id="resultadoCotizacion"></div>  <!-- Asegúrate de tener este contenedor -->
+
+    <button onclick="generarPDF()">Generar PDF</button>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,131 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Fondo negro a toda la pantalla */
+.container {
+    background-color: #121213; /* Fondo negro oscuro */
+    color: white;
+    text-align: center;
+    height: 100vh;  /* Hacer que ocupe toda la pantalla */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* Título */
+h1 {
+    font-size: 36px;
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+
+/* Estilo de los botones */
+button {
+    background-color: #ffee00;  /* Color amarillo */
+    border: none;
+    padding: 15px 40px;
+    font-size: 20px;
+    margin: 10px 0;
+    cursor: pointer;
+    width: 80%;
+    max-width: 300px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+/* Estilo para cuando el botón es hover */
+button:hover {
+    background-color: #d3d019;
+}
+
+/* Formularios */
+form {
+    background-color: white;
+    padding: 20px;
+    margin: 20px auto;
+    width: 80%;
+    max-width: 600px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+form input, form select {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button {
+    width: 100%;
+    background-color: #ffee00;
+    font-size: 18px;
+}
+
+/* Tablas */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #2980b9;
+    color: white;
+}
+
+td {
+    background-color: #fff;
+}
+
+td, th {
+    font-size: 16px;
+}
+
+/* Contenedor para mostrar el resultado */
+#resultado, #resultadoPedido, #resultadoPedidos {
+    background-color: white;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 1000px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos para dispositivos móviles */
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+
+    form {
+        width: 95%;
+    }
+
+    table {
+        font-size: 14px;
+    }
+
+    button {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+}
